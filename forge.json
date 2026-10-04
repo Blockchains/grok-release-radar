@@ -1,0 +1,24 @@
+{
+  "forge_version": 1,
+  "composed_at": "2026-10-04T14:57:39Z",
+  "idea": "A daily digest of new releases across Grok integrations",
+  "repo": "Blockchains/grok-release-radar",
+  "archetype": "digest",
+  "capabilities": [
+    "scheduled",
+    "structured_output"
+  ],
+  "default_model": "grok-4.6",
+  "model_source": {
+    "repo": "Blockchains/xai-sdk-python",
+    "commit": "1d9e1dffc9a0521ede0e6bc7f2b906177b940d34"
+  },
+  "sdk_part": "Blockchains/xai-sdk-python#pkg:xai-sdk",
+  "sdk_commit": "1d9e1dffc9a0521ede0e6bc7f2b906177b940d34",
+  "index_generated_at": "2026-10-04T14:56:15Z",
+  "reference_parts": [
+    "Blockchains/langchain#libs/partners/openai/langchain_openai/chat_models/base.py:1381",
+    "Blockchains/TradingAgents#tradingagents/llm_clients/openai_client.py:208",
+    "Blockchains/mem0#mem0/llms/xai.py:33"
+  ]
+}
