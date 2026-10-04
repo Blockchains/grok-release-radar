@@ -3,7 +3,7 @@ FORGE = {
   "title": "Grok Release Radar",
   "idea": "A daily digest of new releases across Grok integrations",
   "repo_url": "https://github.com/Blockchains/grok-release-radar",
-  "default_model": "grok-4.6",
+  "default_model": "grok-4.7",
   "window_days": 7,
   "repo_list_url": "https://raw.githubusercontent.com/Blockchains/awesome-grokhack/main/grok-forge.json",
   "repos": [],

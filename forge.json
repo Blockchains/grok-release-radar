@@ -1,6 +1,6 @@
 {
   "forge_version": 1,
-  "composed_at": "2026-10-04T15:03:12Z",
+  "composed_at": "2026-10-04T15:04:22Z",
   "idea": "A daily digest of new releases across Grok integrations",
   "repo": "Blockchains/grok-release-radar",
   "archetype": "digest",
@@ -8,7 +8,7 @@
     "scheduled",
     "structured_output"
   ],
-  "default_model": "grok-4.6",
+  "default_model": "grok-4.7",
   "model_source": {
     "repo": "Blockchains/xai-sdk-python",
     "commit": "1d9e1dffc9a0521ede0e6bc7f2b906177b940d34"

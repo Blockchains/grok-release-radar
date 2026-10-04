@@ -6,7 +6,7 @@ A daily digest of new releases across Grok integrations
 
 - Archetype: `digest` · capabilities: scheduled, structured_output
 - Grok via the official `xai-sdk` (gRPC) with structured output, run daily by GitHub Actions
-- Default model `grok-4.6`
+- Default model `grok-4.7`
 
 ## Keys
 If api.x.ai answers 403 because the xAI account is out of credits or over its spending limit, the app shows an **xAI credits needed** notice; outputs are never faked.
