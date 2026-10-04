@@ -1,4 +1,4 @@
 # xai-sdk installed from the Blockchains fork of xai-org/xai-sdk-python, pinned to the commit the index saw.
 xai-sdk @ git+https://github.com/Blockchains/xai-sdk-python@1d9e1dffc9a0521ede0e6bc7f2b906177b940d34
-pydantic>=2.5,<3
-pytest>=8
+pydantic>=2.13.5,<3
+pytest>=9.1.1
