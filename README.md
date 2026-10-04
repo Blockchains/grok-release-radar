@@ -9,6 +9,8 @@ A daily digest of new releases across Grok integrations
 - Default model `grok-4.6`
 
 ## Keys
+If api.x.ai answers 403 because the xAI account is out of credits or over its spending limit, the app shows an **xAI credits needed** notice; outputs are never faked.
+
 Add the `XAI_API_KEY` repository secret to enable Grok summaries. Without it the page still publishes the real GitHub release data and shows a clear "needs key" notice instead of a summary.
 
 ## Run locally
