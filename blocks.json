@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json",
+  "schema_version": "1.0",
+  "name": "grok-release-radar",
+  "repo": "Blockchains/grok-release-radar",
+  "summary": "Daily digest app composed by grokhack-forge: collects real GitHub release activity for tracked Grok-integration repos and summarises it with the official xai-sdk (gRPC) using structured output, published to GitHub Pages by Actions.",
+  "kind": [
+    "web-app",
+    "automation"
+  ],
+  "stability": "reference",
+  "license": "MIT",
+  "homepage": "https://blockchains.github.io/grok-release-radar/",
+  "entrypoints": [
+    {
+      "type": "web",
+      "name": "live app",
+      "ref": "https://blockchains.github.io/grok-release-radar/",
+      "usage": "https://blockchains.github.io/grok-release-radar/"
+    },
+    {
+      "type": "file",
+      "name": "forge.json / PARTS.md",
+      "ref": "forge.json",
+      "usage": "composition manifest: archetype, capabilities, SDK part + commit, default model"
+    },
+    {
+      "type": "file",
+      "name": "app/",
+      "ref": "app/main.py",
+      "exports": [
+        "collect",
+        "summarize",
+        "render",
+        "FORGE"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "XAI_API_KEY",
+      "type": "secret/env or pasted in the page"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Grok output",
+      "type": "web page"
+    }
+  ],
+  "deps": [
+    "python>=3.10"
+  ],
+  "compatible_with": [
+    {
+      "repo": "Blockchains/grokhack-forge",
+      "how": "the composer that generated it; re-compose for variants"
+    },
+    {
+      "repo": "Blockchains/grokhack-index",
+      "how": "where its SDK part and reference snippets come from"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-sdk",
+      "how": "add blockchain data as tools (chat) or inputs (digest)"
+    }
+  ],
+  "tests": {
+    "command": "pytest -q && python -m app.e2e",
+    "ci": ".github/workflows/ci.yml",
+    "network": true
+  },
+  "env": [
+    {
+      "name": "XAI_API_KEY",
+      "required": false,
+      "purpose": "live Grok calls; without it CI proves api.x.ai rejects the unauthenticated call"
+    }
+  ],
+  "docs": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llms": "llms.txt"
+  }
+}
