@@ -1,6 +1,6 @@
 # Integration parts used by Grok Release Radar
 
-Composed by [grokhack.com /forge](https://grokhack.com/forge) from [Blockchains/grokhack-index](https://github.com/Blockchains/grokhack-index) (index generated 2026-10-04T14:56:15Z).
+Composed by [grokhack-forge](https://github.com/Blockchains/grokhack-forge) from [Blockchains/grokhack-index](https://github.com/Blockchains/grokhack-index) (index generated 2026-10-04T14:56:15Z).
 
 **Idea:** A daily digest of new releases across Grok integrations
 
